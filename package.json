@@ -1,0 +1,22 @@
+{
+  "name": "zenn-contents-manager",
+  "version": "1.0.0",
+  "description": "Zenn contents manager",
+  "repository": "https://github.com/mknsk0309/doc-zenn-contents.git",
+  "author": "mknsk0309 <156224339+mknsk0309@users.noreply.github.com>",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "new-article": "zenn new:article",
+    "new-book": "zenn new:book"
+  },
+  "dependencies": {
+    "textlint": "^14.3.0",
+    "textlint-filter-rule-comments": "^1.2.2",
+    "textlint-rule-preset-ja-spacing": "^2.4.3",
+    "textlint-rule-preset-ja-technical-writing": "^10.0.1",
+    "zenn-cli": "^0.1.158",
+    "zx": "^8.2.2"
+  }
+}

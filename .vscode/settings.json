@@ -1,0 +1,42 @@
+{
+  "editor.formatOnSave": true,
+  "git.useEditorAsCommitInput": true,
+  "explorer.compactFolders": false,
+  "scm.compactFolders": false,
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.snippetSuggestions": "top",
+    "editor.quickSuggestions": {
+      "comments": true,
+      "strings": true,
+      "other": true
+    }
+  },
+  "markdown.copyFiles.destination": {
+    "articles/*.md": "/images/${documentRelativeDirName}/${documentBaseName}/",
+    "books/*/*.md": "/images/${documentRelativeDirName}/${documentBaseName}/"
+  },
+  "markdown.extension.toc.updateOnSave": false,
+  "markdowntable.formatOnSave": true,
+  "markdownlint.run": "onType",
+  "markdownlint.config": {
+    "MD013": false, // MD013: 1文の最大文字数をはtextlintと競合するため無効化
+    "MD024": false, // MD024: 見出し文字列の重複を許容
+    "MD026": false, // MD026: 見出しに.,;:が入ることを許容
+    "MD033": false, // MD033: HTML記述を許容
+    "MD034": false, // MD034: URLそのままの表記を許容
+    "MD041": false, // MD041: ファイルの最初がトップレベル見出しでないことを許容
+    "MD045": false, // MD045: 画像の代替テキストがないことを許容
+  },
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "(books|articles)(\/.*)?\/.*\\.md$",
+        "cmd": "bash -c 'npx zx scripts/replace-image-path.mjs \"${file}\"'"
+      }
+    ]
+  },
+  "textlint.configPath": "/workspace/config/.textlintrc.jsonc",
+  "textlint.run": "onType",
+  "textlint.autoFixOnSave": true
+}

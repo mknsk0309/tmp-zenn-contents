@@ -1,0 +1,131 @@
+{
+  "table": {
+    "scope": "markdown",
+    "prefix": "table",
+    "body": [
+      "| ${0:   } |     |     |",
+      "| --- | --- | --- |",
+      "|     |     |     |"
+    ],
+    "description": "Table（Markdown）"
+  },
+  "linkWithImage": {
+    "scope": "markdown",
+    "prefix": "link-image",
+    "body": [
+      "[![${1:alt}](${2:imageURL})](${3:linkURL})"
+    ],
+    "description": "Link with Image (Markdown)"
+  },
+  "imageWithCaption": {
+    "scope": "markdown",
+    "prefix": "image-caption",
+    "body": [
+      "![${1:alt}](${2:https://})",
+      "*${3:caption text}*"
+    ],
+    "description": "Image with Caption (Markdown)"
+  },
+  "codeBlock": {
+    "scope": "markdown",
+    "prefix": "code-block",
+    "body": [
+      "```${1:ts}:${2:file-name.ts}",
+      "${0}",
+      "```"
+    ],
+    "description": "Code block（Markdown）"
+  },
+  "codeBlockDiff": {
+    "scope": "markdown",
+    "prefix": "code-block-diff",
+    "body": [
+      "```diff ${1:ts}:${2:file-name.ts}",
+      "${0}",
+      "```"
+    ],
+    "description": "Code block diff（Markdown）"
+  },
+  "blockquote": {
+    "scope": "markdown",
+    "prefix": "blockquote",
+    "body": [
+      "> ${0}"
+    ],
+    "description": "blockquote（Markdown）"
+  },
+  "footnote": {
+    "scope": "markdown",
+    "prefix": "footnote",
+    "body": [
+      "[^1]: ${0:Footnote1}"
+    ],
+    "description": "Footnote（Markdown）"
+  },
+  "footnoteInline": {
+    "scope": "markdown",
+    "prefix": "footnote-inline",
+    "body": [
+      "^[${1:Footnote text}]"
+    ],
+    "description": "Footnote inline（Markdown）"
+  },
+  "comment": {
+    "scope": "markdown",
+    "prefix": "comment",
+    "body": [
+      "<!-- ${1:Comment} -->"
+    ],
+    "description": "Inline comment（Markdown）"
+  },
+  "mermaid": {
+    "scope": "markdown",
+    "prefix": "mermaid",
+    "body": [
+      "```mermaid",
+      "${1:flowchart} ${2:LR}",
+      "\t${0:A-->B}",
+      "```",
+      ""
+    ],
+    "description": "Mermaid（Markdown）"
+  },
+  "zennMessage": {
+    "scope": "markdown",
+    "prefix": "zenn-message",
+    "body": [
+      ":::message",
+      "${0:Leave a message here.}",
+      ":::"
+    ],
+    "description": "Message（Zenn）"
+  },
+  "zennMessageAlert": {
+    "scope": "markdown",
+    "prefix": "zenn-message-alert",
+    "body": [
+      ":::message alert",
+      "${0:Leave a alert message here.}",
+      ":::"
+    ],
+    "description": "Alert message（Zenn）"
+  },
+  "zennDetails": {
+    "scope": "markdown",
+    "prefix": "zenn-details",
+    "body": [
+      ":::details ${1:title}",
+      "${0:Leave a detail message here.}",
+      ":::"
+    ],
+    "description": "Details（Zenn）"
+  },
+  "zennPublishedAt": {
+    "scope": "yaml",
+    "prefix": "zenn-published-at",
+    "body": [
+      "published_at: ${1:$CURRENT_YEAR}-${2:$CURRENT_MONTH}-${3:$CURRENT_DATE} ${4:$CURRENT_HOUR}:${5:00}"
+    ],
+    "description": "Published Date (Zenn)"
+  }
+}

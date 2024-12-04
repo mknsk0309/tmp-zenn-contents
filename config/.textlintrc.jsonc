@@ -1,0 +1,69 @@
+{
+  "plugins": {},
+  "filters": {
+    "comments": true
+  },
+  "rules": {
+    // https://github.com/textlint-ja/textlint-rule-preset-ja-spacing#readme
+    "preset-ja-spacing": {
+      "ja-space-between-half-and-full-width": { // 全角・半角文字の間のスペース
+        "space": [
+          "alphabets",
+          "numbers"
+        ]
+      },
+      "ja-space-around-code": { // インラインコードの前後のスペース
+        "before": true,
+        "after": true
+      },
+      "ja-space-around-link": { // リンクの前後のスペース
+        "before": true,
+        "after": true
+      }
+    },
+    // https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing#readme
+    "preset-ja-technical-writing": {
+      "sentence-length": { // 1文の長さ
+        "max": 150
+      },
+      "no-exclamation-question-mark": { // 「！」「？」の使用を許可
+        "allowFullWidthExclamation": true,
+        "allowFullWidthQuestion": true
+      },
+      "ja-no-mixed-period": { // 文末の記号
+        "allowPeriodMarks": [
+          ":",
+          "："
+        ]
+      },
+      "no-doubled-joshi": { // 連続した助詞のチェック
+        "strict": false,
+        "allow": [
+          "も",
+          "や",
+          "か"
+        ],
+        "separatorCharacters": [
+          ",",
+          "，",
+          "、",
+          ".",
+          "．",
+          "。",
+          "?",
+          "!",
+          "？",
+          "！",
+          "「",
+          "」",
+          "\"",
+          "”",
+          "“"
+        ]
+      },
+      "no-mix-dearu-desumasu": { // 敬体（ですます調）と常体（である調）の混在
+        "preferInList": ""
+      }
+    }
+  }
+}

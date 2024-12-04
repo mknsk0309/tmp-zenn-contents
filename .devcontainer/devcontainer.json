@@ -1,0 +1,22 @@
+{
+  "name": "Zenn Contents Manager",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "zenn",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "MS-CEINTL.vscode-language-pack-ja",
+        "vscode-icons-team.vscode-icons",
+        "eamodio.gitlens",
+        "yzhang.markdown-all-in-one",
+        "TakumiI.markdowntable",
+        "taichi.vscode-textlint",
+        "christian-kohler.path-intellisense",
+        "bierner.emojisense",
+        "DavidAnson.vscode-markdownlint",
+        "emeraldwalk.RunOnSave"
+      ]
+    }
+  }
+}
